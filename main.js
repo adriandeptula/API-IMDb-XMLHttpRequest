@@ -34,6 +34,9 @@ function getMovies(searchText) {
             });
             document.querySelector('.movies').innerHTML = output;
         }
+        if (this.status !== 200) {
+            alert("Something went wrong: You are not being authorized or the file not being found")
+        }
     }
     xhr.send()
 
