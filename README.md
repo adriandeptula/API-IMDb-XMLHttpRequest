@@ -1,2 +1,2 @@
 # API-IMDb-HMLHttpRequest
- in progress
+Working decent API staff with some css with XHR
