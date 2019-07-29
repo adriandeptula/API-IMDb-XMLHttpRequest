@@ -11,7 +11,7 @@ document.getElementById('searchForm').addEventListener('submit', (e) => {
 
 function getMovies(searchText) {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://www.omdbapi.com/?apikey=f31a4db7&s=${searchText}`, true);
+    xhr.open('GET', `https://www.omdbapi.com/?apikey=f31a4db7&s=${searchText}`, true);
 
     xhr.onload = function () {
         if (this.status == 200) {
@@ -52,7 +52,7 @@ function getMovie(id) {
 
 
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', `http://www.omdbapi.com/?apikey=f31a4db7&i=${movieId}`, true);
+    xhr.open('GET', `https://www.omdbapi.com/?apikey=f31a4db7&i=${movieId}`, true);
 
     xhr.onload = function () {
         if (this.status == 200) {
